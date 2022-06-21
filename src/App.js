@@ -11,8 +11,7 @@ import Home from "./components/Home.js";
 import Contact from "./components/Contact.js";
 import Music from "./components/Music.js";
 import Footer from "./components/Footer.js";
-
-//import "./App.css";
+import "./App.css";
 
 const App = () => {
     return (
