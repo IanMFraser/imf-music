@@ -15,3 +15,8 @@ body {
   overflow-x: hidden;
 }
 
+.App {
+  display: flex;
+  flex-direction: row;
+}
+

@@ -1,30 +1,42 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import React from "react";
+import styled from "styled-components";
 
 const NavBar = () => {
+  const Nav = styled.nav`
+    font-size: 16px;
+    padding: 1em;
+    position: sticky;
+    width: 200px;
+  `;
 
-    return(
-      <>
-        <Navbar expand="lg" collapseOnSelect className="my-4">
-          <Container className="ml-10">
-            <Navbar.Brand href="/music" className="my-2 font-italic font-weight-bold">IAN M FRASER</Navbar.Brand>
-            <Navbar.Toggle aria-controls="imf-navbar-nav" className="border-0" />
-            <Navbar.Collapse id="imf-navbar-nav">
-              <Nav as="ul" className="justify-content-start ml-2 flex-row">
-                <Nav.Item as="li" className="m-1">
-                  <Nav.Link href="/music/albums" className="m-0">MUSIC</Nav.Link>
-                </Nav.Item>
-                <Nav.Item as="li" className="m-1">
-                    <Nav.Link href="/music/contact" className="m-0">CONTACT</Nav.Link>
-                </Nav.Item>
-              </Nav>
-              </Navbar.Collapse>
-          </Container>
-        </Navbar>
-        </>
-    )
-}
+  const NavMenu = styled.ul`
+    list-style-type: none;
+
+    > li a {
+      color: black;
+    }
+    > li a:hover {
+      cursor: pointer;
+      background-color: #49fb35;
+    }
+  `;
+
+  return (
+    <Nav className="Navbar">
+      <NavMenu>
+        <strong>IAN M FRASER</strong>
+        <li>
+          <a href="/music">NEWS</a>
+        </li>
+        <li>
+          <a href="/music/albums">MUSIC</a>
+        </li>
+        <li>
+          <a href="/music/contact">CONTACT</a>
+        </li>
+      </NavMenu>
+    </Nav>
+  );
+};
 
 export default NavBar;
