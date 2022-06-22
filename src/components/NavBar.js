@@ -4,13 +4,15 @@ import styled from "styled-components";
 const NavBar = () => {
   const Nav = styled.nav`
     font-size: 16px;
-    padding: 1em;
-    position: sticky;
-    width: 200px;
+    padding: 1.5em;
+    top: 0;
+    left: 0;
+    width: 300px;
   `;
 
   const NavMenu = styled.ul`
     list-style-type: none;
+    position: fixed;
 
     > li a {
       color: black;

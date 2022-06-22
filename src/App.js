@@ -9,7 +9,6 @@ import NavBar from "./components/NavBar.js";
 import Home from "./components/Home.js";
 import Contact from "./components/Contact.js";
 import Music from "./components/Music.js";
-import Footer from "./components/Footer.js";
 import "./App.css";
 
 const App = () => {
@@ -31,9 +30,6 @@ const App = () => {
                         <Redirect to="/music" />
                     </Route>
                 </Switch>
-            </div>
-            <div className="AppFooter">
-                <Footer />
             </div>
         </Router>
     );

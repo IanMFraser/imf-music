@@ -16,7 +16,6 @@ body {
 }
 
 .App {
-  display: flex;
-  flex-direction: row;
+ display: flex;
 }
 
