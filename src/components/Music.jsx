@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Switch, Route, useRouteMatch } from 'react-router-dom';
 import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container'
-import Album from './Album.js'
+import Album from './Album'
 import data from '../data.json'
 
 const Music = () => {

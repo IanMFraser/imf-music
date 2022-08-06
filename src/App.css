@@ -13,9 +13,10 @@ body {
   color: #171717;
   line-height: calc(1.5em + (1.6 - 1.5) * ((100vw - 300px)/(1600 - 300)));
   overflow-x: hidden;
+  height: 100vh;
 }
 
 .App {
- display: flex;
+  display: flex;
 }
 

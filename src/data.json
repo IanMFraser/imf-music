@@ -1,15 +1,13 @@
 {
-    "news": {
-        "currentNews": {
-            "title": "\"Berserk\" out now on Superpang",
-            "date": "April 2, 2021",
-            "category": "RELEASE",
-            "images": "https://storage.googleapis.com/album-images/IMF-BERSERK.jpeg",
-            "alt": "Berserk artwork",
-            "content": "New album for nonlinear feedback systems and waveset synthesis, available now on Superpang.",
-            "link": "https://ianmfraser.bandcamp.com/album/berserk"
-        },
-        "oldNews": [
+    "news": [
+            {
+                "id": "9",
+                "date": "April 2, 2021",
+                "category": "RELEASE",
+                "categoryVariant": "info",
+                "content": "New album for nonlinear feedback systems and waveset synthesis, available now on Superpang.",
+                "link": "https://ianmfraser.bandcamp.com/album/berserk"
+            },
             {
                 "id": "8",
                 "date": "January 1, 2021",
@@ -82,9 +80,19 @@
                 "content": "Keroaän \"Pulsars In Rhombus Form\" out now on Nada.",
                 "link": "https://nadarecs.bandcamp.com/album/pulsars-in-rhombus-form" 
             }
-        ]
-    },
+        ],
     "albums" : [
+        {
+            "id": "livingroom",
+            "artist": "Ian M Fraser",
+            "title": "Live from the Living Room (Straight to Hard Disk)",
+            "artwork": "https://storage.googleapis.com/album-images/livingroom.jpeg",
+            "tracklist": ["Live from the Living Room (Straight to Hard Disk)"],
+            "description": ["Superpang hosts a series of exclusive one-off live sessions by members of our roster celebrating our 100th release and in anticipation of new digital & physical releases coming soon. Available exclusively on Bandcamp."],
+            "credits": ["Ian M Fraser - Live from the Living Room (Straight to Hard Disk) Recorded live on November 29, 2021 in NYC."],
+            "iframeSrc": "https://bandcamp.com/EmbeddedPlayer/album=3307089180/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
+            "mediaLink": "https://ianmfraser.bandcamp.com/album/live-from-the-living-room-straight-to-hard-disk"
+        },
         {
             "id": "berserk",
             "artist": "Ian M Fraser",
