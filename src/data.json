@@ -1,6 +1,14 @@
 {
     "news": [
             {
+                "id": "10",
+                "date": "January 22, 2022",
+                "category": "RELEASE",
+                "categoryVariant": "info",
+                "content": "New track \"Requiem for a Twisted Hard Disk\" out now on \"Get This: 32 Tracks For Free - A Tribute to Peter Rehberg\" compilation.",
+                "link": "https://pwgen20.bandcamp.com/album/get-this-32-tracks-for-free-a-tribute-to-peter-rehberg"
+            },
+            {
                 "id": "9",
                 "date": "April 2, 2021",
                 "category": "RELEASE",
@@ -21,7 +29,7 @@
                 "date": "June 19, 2020",
                 "category": "RELEASE",
                 "categoryVariant": "info",
-                "content": "Five Sketches For JMY out now on Building A Better Reality compilation",
+                "content": "\"Five Sketches For JMY\" out now on \"Building A Better Reality\" compilation",
                 "link": "https://jmymusic.bandcamp.com/album/building-a-better-reality-a-benefit-compilation"
             },
             {
@@ -29,7 +37,7 @@
                 "date": "May 10, 2020",
                 "category": "RELEASE",
                 "categoryVariant": "info",
-                "content": "New track Surround Reapir out now on Pulsar.scramble ($ pwgen 20)! Incremental compilation featuring computer music composed with pulsar synthesis.",
+                "content": "New track \"Surround Reapir\" out now on \"Pulsar.scramble\" ($ pwgen 20)! Incremental compilation featuring computer music composed with pulsar synthesis.",
                 "link": "https://pwgen20.bandcamp.com/album/pulsar-scramble"
             },
             {

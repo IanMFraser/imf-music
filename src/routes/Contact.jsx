@@ -13,7 +13,7 @@ function Contact() {
                             src="https://storage.googleapis.com/album-images/IanFraser_TransPecos-20150805-04317.jpeg"
                             alt="imf performing at trans pecos"
                         />
-                        <Figure.Caption className="text-muted">
+                        <Figure.Caption style={{ 'font-size': '.5em' }}>
                             Photo by Billy Gomberg
                         </Figure.Caption>
                     </Figure>

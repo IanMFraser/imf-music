@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const Main = styled.main`
     margin-top: 2rem;
@@ -7,8 +8,12 @@ const Main = styled.main`
 `
 
 function Content(props) {
-    // eslint-disable-next-line react/destructuring-assignment, react/prop-types
-    return <Main>{props.children}</Main>
+    const { children } = props
+    return <Main>{children}</Main>
 }
 
 export default Content
+
+Content.propTypes = {
+    children: PropTypes.node.isRequired,
+}

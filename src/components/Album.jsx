@@ -51,6 +51,5 @@ function Album({ albums }) {
 export default withRouter(Album)
 
 Album.propTypes = {
-    // eslint-disable-next-line react/forbid-prop-types, react/require-default-props
-    albums: PropTypes.array,
+    albums: PropTypes.instanceOf(Array).isRequired,
 }

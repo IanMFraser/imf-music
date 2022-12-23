@@ -8,8 +8,7 @@ function BackButton() {
         history.push('/music/albums')
     }
     return (
-        // eslint-disable-next-line react/button-has-type
-        <button onClick={onClickHandler} className="backButton">
+        <button onClick={onClickHandler} className="backButton" type="button">
             {' '}
             {'<-- Back'}
         </button>
