@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import data from '../data.json'
 
@@ -15,10 +15,7 @@ const ListItem = styled.li`
 `
 
 function News() {
-    const [news, setNews] = useState([])
-    useEffect(() => {
-        setNews(data.news)
-    }, [])
+    const { news } = data
 
     return (
         <Container>

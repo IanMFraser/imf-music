@@ -9,9 +9,12 @@ const Copyright = styled.footer`
     width: 100%;
 `
 function Footer() {
+    const currentYear = new Date().getFullYear()
     return (
         <Copyright>
-            <p>copyright © Ian M Fraser 2022</p>
+            <p>
+                copyright © Ian M Fraser <span>`${currentYear}`</span>
+            </p>
         </Copyright>
     )
 }

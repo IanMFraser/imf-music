@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Nav = styled.nav`
@@ -32,18 +33,18 @@ function NavBar() {
         <Nav className="Navbar">
             <NavMenu>
                 <li>
-                    <a href="/music">
+                    <Link to="/music">
                         <strong>IAN M FRASER</strong>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="/music/news">NEWS</a>
+                    <Link to="/music/news">NEWS</Link>
                 </li>
                 <li>
-                    <a href="/music/albums">MUSIC</a>
+                    <Link to="/music/albums">MUSIC</Link>
                 </li>
                 <li>
-                    <a href="/music/contact">CONTACT</a>
+                    <Link to="/music/contact">CONTACT</Link>
                 </li>
             </NavMenu>
         </Nav>
