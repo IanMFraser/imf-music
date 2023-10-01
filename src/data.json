@@ -1,15 +1,23 @@
 {
     "news": {
         "currentNews": {
-            "title": "\"Berserk\" out now on Superpang",
-            "date": "April 2, 2021",
+            "title": "\"GET THIS\" out now on $pwgen20",
+            "date": "January 22, 2022",
             "category": "RELEASE",
-            "images": "https://storage.googleapis.com/album-images/IMF-BERSERK.jpeg",
-            "alt": "Berserk artwork",
-            "content": "New album for nonlinear feedback systems and waveset synthesis, available now on Superpang.",
-            "link": "https://ianmfraser.bandcamp.com/album/berserk"
+            "images": "https://storage.googleapis.com/album-images/get_this_art.jpeg",
+            "alt": "Get This artwork",
+            "content": "New track \"Requiem for a Twisted Hard Disk\" out now on \"Get This: 32 Tracks For Free - A Tribute to Peter Rehberg\".",
+            "link": "https://pwgen20.bandcamp.com/album/get-this-32-tracks-for-free-a-tribute-to-peter-rehberg"
         },
         "oldNews": [
+            {
+                "id": "9",
+                "date": "April 2, 2021",
+                "category": "RELEASE",
+                "categoryVariant": "info",
+                "content": "New album \"Berserk\" available now on Superpang.",
+                "link": "https://ianmfraser.bandcamp.com/album/berserk"
+            },
             {
                 "id": "8",
                 "date": "January 1, 2021",
@@ -23,15 +31,15 @@
                 "date": "June 19, 2020",
                 "category": "RELEASE",
                 "categoryVariant": "info",
-                "content": "Five Sketches For JMY out now on Building A Better Reality compilation",
+                "content": "\"Five Sketches For JMY\" out now on \"Building A Better Reality\" compilation",
                 "link": "https://jmymusic.bandcamp.com/album/building-a-better-reality-a-benefit-compilation"
             },
             {
-                "id":"6",
+                "id": "6",
                 "date": "May 10, 2020",
                 "category": "RELEASE",
                 "categoryVariant": "info",
-                "content": "New track Surround Reapir out now on Pulsar.scramble ($ pwgen 20)! Incremental compilation featuring computer music composed with pulsar synthesis.",
+                "content": "New track \"Surround Reapir\" out now on \"Pulsar.scramble\" ($ pwgen 20)! Incremental compilation featuring computer music composed with pulsar synthesis.",
                 "link": "https://pwgen20.bandcamp.com/album/pulsar-scramble"
             },
             {
@@ -48,7 +56,7 @@
                 "category": "PERFORMANCE",
                 "categoryVariant": "success",
                 "content": "@ The Red Room Baltimore, MD: Diffusion Festival w/ Marcin Pietruszewski, Jessica Ekomane, and IMF.",
-                "link": "" 
+                "link": ""
             },
             {
                 "id": "3",
@@ -56,7 +64,7 @@
                 "category": "RELEASE",
                 "categoryVariant": "info",
                 "content": "\"Solo For Computer and Amplified Metal\" included on Function() Festival compilation.",
-                "link": "https://functionfestival.bandcamp.com/releases"   
+                "link": "https://functionfestival.bandcamp.com/releases"
             },
             {
                 "id": "2",
@@ -64,7 +72,7 @@
                 "category": "PERFORMANCE",
                 "categoryVariant": "success",
                 "content": "@ Vox Populi Gallery Philadelphia, PA: IMF, Ruben Patino, LXV, Reed Evan Rosenberg.",
-                "link": ""  
+                "link": ""
             },
             {
                 "id": "1",
@@ -72,7 +80,7 @@
                 "category": "RELEASE",
                 "categoryVariant": "info",
                 "content": "Ten short pulsar studies included on Hyperchaos Vol 1 released by Edvacm.",
-                "link": "https://edvacm.bandcamp.com/album/hyperchaos-volume-1"  
+                "link": "https://edvacm.bandcamp.com/album/hyperchaos-volume-1"
             },
             {
                 "id": "0",
@@ -80,19 +88,31 @@
                 "category": "RELEASE",
                 "categoryVariant": "info",
                 "content": "Keroaän \"Pulsars In Rhombus Form\" out now on Nada.",
-                "link": "https://nadarecs.bandcamp.com/album/pulsars-in-rhombus-form" 
+                "link": "https://nadarecs.bandcamp.com/album/pulsars-in-rhombus-form"
             }
         ]
     },
-    "albums" : [
+    "albums": [
         {
             "id": "berserk",
             "artist": "Ian M Fraser",
             "title": "Berserk",
             "artwork": "https://storage.googleapis.com/album-images/IMF-BERSERK.jpeg",
-            "tracklist": ["Zoning Out", "Hitting The Wall", "Interlude To Death", "The Cannibal", "Hard Work and Guts"],
-            "description": ["Composed by Ian M Fraser using nonlinear feedback systems and waveset synthesis"],
-            "credits": ["Edited using Sensorimotor Primitives Auditory Perception Software by Jetpack Cognition Lab", "Mastered by Roc Jimènez De Cisneros", "S/O Christian, Joe, Oswald, Roc, Philly crew PLAY LOUD!"],
+            "tracklist": [
+                "Zoning Out",
+                "Hitting The Wall",
+                "Interlude To Death",
+                "The Cannibal",
+                "Hard Work and Guts"
+            ],
+            "description": [
+                "Composed by Ian M Fraser using nonlinear feedback systems and waveset synthesis"
+            ],
+            "credits": [
+                "Edited using Sensorimotor Primitives Auditory Perception Software by Jetpack Cognition Lab",
+                "Mastered by Roc Jimènez De Cisneros",
+                "S/O Christian, Joe, Oswald, Roc, Philly crew PLAY LOUD!"
+            ],
             "iframeSrc": "https://bandcamp.com/EmbeddedPlayer/album=959681323/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
             "mediaLink": "https://ianmfraser.bandcamp.com/album/berserk"
         },
@@ -102,8 +122,14 @@
             "title": "The Realness",
             "artwork": "https://storage.googleapis.com/album-images/realness.jpg",
             "tracklist": ["Parallels", "Worf Gets Denied (Again and Again...)"],
-            "description": ["Debut C-20 cassette from Philadelphia based computer musician Ian M Fraser. No conceptual garbage, no MIDI bullshit! Just hard hitting, non-linear equation synthesis heavy algorithmic noise! Recorded and edited throughout 2013, both live and at F.U.N.V.A.C. For fans of extreme computer music, multiverse theories, gingerbreadman map and Klingon social justice. PLAY LOUD!"],
-            "credits": ["Computer music programmed and compiled by Ian M Fraser 2013", "Mastered by Joe Panzner", "Cover by Faryal Maroof"],
+            "description": [
+                "Debut C-20 cassette from Philadelphia based computer musician Ian M Fraser. No conceptual garbage, no MIDI bullshit! Just hard hitting, non-linear equation synthesis heavy algorithmic noise! Recorded and edited throughout 2013, both live and at F.U.N.V.A.C. For fans of extreme computer music, multiverse theories, gingerbreadman map and Klingon social justice. PLAY LOUD!"
+            ],
+            "credits": [
+                "Computer music programmed and compiled by Ian M Fraser 2013",
+                "Mastered by Joe Panzner",
+                "Cover by Faryal Maroof"
+            ],
             "iframeSrc": "https://bandcamp.com/EmbeddedPlayer/album=1107197621/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/",
             "mediaLink": "http://ianmfraser.bandcamp.com/album/the-realness-2"
         },
@@ -113,8 +139,13 @@
             "title": "Harlem Electronics",
             "artwork": "https://storage.googleapis.com/album-images/harlem-purple.jpg",
             "tracklist": ["SIDE A", "SIDE B"],
-            "description": ["Cassette edition of 100. Release on Pilgrim Talk (PT34).This program performs with no human interaction whatsoever. Play loud! File under: Stochastic Grind"],
-            "credits": ["Computer music programmed by Ian M Fraser 2015 - 2016 in Harlem, New York City", "Mastered by Joe Panzner"],
+            "description": [
+                "Cassette edition of 100. Release on Pilgrim Talk (PT34).This program performs with no human interaction whatsoever. Play loud! File under: Stochastic Grind"
+            ],
+            "credits": [
+                "Computer music programmed by Ian M Fraser 2015 - 2016 in Harlem, New York City",
+                "Mastered by Joe Panzner"
+            ],
             "iframeSrc": "https://bandcamp.com/EmbeddedPlayer/album=4084221057/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/",
             "mediaLink": "http://ianmfraser.bandcamp.com/album/harlem-electronics"
         },
@@ -123,9 +154,17 @@
             "artist": "Keroaän",
             "title": "Daunting In Its Variousness: First In A Suite Of An Indeterminate Number Of Pieces",
             "artwork": "https://storage.googleapis.com/album-images/daunting.jpg",
-            "tracklist": ["Daunting In Its Variousness: First In A Suite Of An Indeterminate Number Of Pieces"],
-            "description": ["Hand-painted fan cd-rs in clear poly slim cases, labeled with clear stickers. Released on Copy Ror Your Records (cfyrf03) in an edition of 100"],
-            "credits": ["Keroaän Artificial Intelligence developed by Ian M. Fraser & Reed Evan Rosenberg", "Performed by Keroaän without any human intervention whatsoever", "Mastered by Joe Panzner"],
+            "tracklist": [
+                "Daunting In Its Variousness: First In A Suite Of An Indeterminate Number Of Pieces"
+            ],
+            "description": [
+                "Hand-painted fan cd-rs in clear poly slim cases, labeled with clear stickers. Released on Copy Ror Your Records (cfyrf03) in an edition of 100"
+            ],
+            "credits": [
+                "Keroaän Artificial Intelligence developed by Ian M. Fraser & Reed Evan Rosenberg",
+                "Performed by Keroaän without any human intervention whatsoever",
+                "Mastered by Joe Panzner"
+            ],
             "iframeSrc": "https://bandcamp.com/EmbeddedPlayer/album=3354448294/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/",
             "mediaLink": "https://ianmfraser.bandcamp.com/album/daunting-in-its-variousness-first-in-a-suite-of-an-indeterminate-number-of-pieces"
         },
@@ -135,18 +174,35 @@
             "title": "Pulsars In Rhombus Form",
             "artwork": "https://storage.googleapis.com/album-images/pulsars.jpg",
             "tracklist": ["01", "02", "03", "04", "05", "06", "07", "08"],
-            "description":  [ "Pulsars in Rhombus Form is a real-time generative music agent with two major components: a listener and a player. The listener takes as input an audio stream from the album Planisphærium by sci-fi technical death metal band Wormed (ES). It identifies kick and snare drum strikes as well as vocal phrasing and communicates its findings to the player in order to trigger gestural events and compositional shifts. The player consists of an 8-voice Max/MSP implementation of pulsar synthesis (Roads). Its parameters are controlled by various chaotic maps and stochastic methods. The program performs with no human intervention whatsoever. Released September 28, 2018 on Nada (nada21)"],
-            "credits": ["Developed by Ian M Fraser and Reed Evan Rosenberg", "Recorded at F.U.N.V.A.C. in 2016", "Mastered by Jac Beloeil", "Thanks to Michael Flora, Wormed, Jac Beloeil, Faryal Maroof, Eric Lyons, Phil Julian, and Eric Laska"],
+            "description": [
+                "Pulsars in Rhombus Form is a real-time generative music agent with two major components: a listener and a player. The listener takes as input an audio stream from the album Planisphærium by sci-fi technical death metal band Wormed (ES). It identifies kick and snare drum strikes as well as vocal phrasing and communicates its findings to the player in order to trigger gestural events and compositional shifts. The player consists of an 8-voice Max/MSP implementation of pulsar synthesis (Roads). Its parameters are controlled by various chaotic maps and stochastic methods. The program performs with no human intervention whatsoever. Released September 28, 2018 on Nada (nada21)"
+            ],
+            "credits": [
+                "Developed by Ian M Fraser and Reed Evan Rosenberg",
+                "Recorded at F.U.N.V.A.C. in 2016",
+                "Mastered by Jac Beloeil",
+                "Thanks to Michael Flora, Wormed, Jac Beloeil, Faryal Maroof, Eric Lyons, Phil Julian, and Eric Laska"
+            ],
             "iframeSrc": "https://bandcamp.com/EmbeddedPlayer/album=2154575571/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/",
-            "mediaLink": "https://ianmfraser.bandcamp.com/album/pulsars-in-rhombus-form" 
+            "mediaLink": "https://ianmfraser.bandcamp.com/album/pulsars-in-rhombus-form"
         },
         {
             "id": "trajectory",
             "artist": "Ian M Fraser & Reed Evan Rosenberg",
             "title": "The Trajectory Toward Which All Other Trajectories Converge",
             "artwork": "https://storage.googleapis.com/album-images/lateral.jpg",
-            "tracklist": ["The Trajectory Toward Which All Other Trajectories Converge"],
-            "description":["\"To understand the trajectories of the stars through a galaxy, Michel Hénon computed the intersections of an orbit with a plane. The resulting patterns depended on the system’s total energy. The points from a stable orbit gradually produced a continuous, connected curve. Other energy levels, however, produced complicated mixtures of stability and chaos, represented by regions of scattered points. […]", "The nested detail, lines within lines, can be seen in final form in a series of pictures with progressively greater magnification. But the eerie effect of the strange attractor can be appreciated another way when the shape emerges in time, point by point. It appears like a ghost out of the mist. New points scatter so randomly across the screen that it seems incredible that any structure is there, let alone a structure so intricate and fine. Any two consecutive points are arbitrarily far apart, just like any two points initially nearby in a turbulent flow. Given any number of points, it is impossible to guess where the next will appear—except, of course, that it will be somewhere on the attractor.","The points wander so randomly, the pattern appears so ethereally, that it is hard to remember that the shape is an attractor. It is not just any trajectory of a dynamical system. It is the trajectory toward which all other trajectories converge. That is why the choice of starting conditions does not matter. As long as the starting point lies somewhere near the attractor, the next few points will converge to the attractor with great rapidity.\"", "From Chaos: Making A New Science by James Gleick (pgs. 148-150)", "The track is a collection of études whose content is entirely derived from sonification of the Hénon Map and a sound file of the Chaos: Making A New Science AAX format audiobook interpreted as raw audio data.", "Realized in real time without any human interference, each étude is the diffusion of a single variation of a compact patch coded by Fraser & Rosenberg in Supercollider in which the chaotic sonifications modulate various parameters regulating the playback of the raw data sound file. The études were sequenced in Audacity, each separated by a period of silence. All software utilized in the piece is free and open source.", "– RER & IMF"],
+            "tracklist": [
+                "The Trajectory Toward Which All Other Trajectories Converge"
+            ],
+            "description": [
+                "\"To understand the trajectories of the stars through a galaxy, Michel Hénon computed the intersections of an orbit with a plane. The resulting patterns depended on the system’s total energy. The points from a stable orbit gradually produced a continuous, connected curve. Other energy levels, however, produced complicated mixtures of stability and chaos, represented by regions of scattered points. […]",
+                "The nested detail, lines within lines, can be seen in final form in a series of pictures with progressively greater magnification. But the eerie effect of the strange attractor can be appreciated another way when the shape emerges in time, point by point. It appears like a ghost out of the mist. New points scatter so randomly across the screen that it seems incredible that any structure is there, let alone a structure so intricate and fine. Any two consecutive points are arbitrarily far apart, just like any two points initially nearby in a turbulent flow. Given any number of points, it is impossible to guess where the next will appear—except, of course, that it will be somewhere on the attractor.",
+                "The points wander so randomly, the pattern appears so ethereally, that it is hard to remember that the shape is an attractor. It is not just any trajectory of a dynamical system. It is the trajectory toward which all other trajectories converge. That is why the choice of starting conditions does not matter. As long as the starting point lies somewhere near the attractor, the next few points will converge to the attractor with great rapidity.\"",
+                "From Chaos: Making A New Science by James Gleick (pgs. 148-150)",
+                "The track is a collection of études whose content is entirely derived from sonification of the Hénon Map and a sound file of the Chaos: Making A New Science AAX format audiobook interpreted as raw audio data.",
+                "Realized in real time without any human interference, each étude is the diffusion of a single variation of a compact patch coded by Fraser & Rosenberg in Supercollider in which the chaotic sonifications modulate various parameters regulating the playback of the raw data sound file. The études were sequenced in Audacity, each separated by a period of silence. All software utilized in the piece is free and open source.",
+                "– RER & IMF"
+            ],
             "credits": ["Originally released on Lateral Addition"],
             "iframeSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/77890969&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
             "mediaLink": "https://soundcloud.com/lateral-addition/trajectory"
@@ -157,10 +213,17 @@
             "title": "Getting Love From All The Wrong Places",
             "artwork": "https://storage.googleapis.com/album-images/kudler%2Bfraser.jpg",
             "tracklist": ["Getting Love From All The Wrong Places"],
-            "description": ["\"Getting love from all the wrong places\" originally released in 2010 as Homophoni 41\nThanks to Tom Lindel (unused recording), David, Dustin, Adam/CoH,Ethan, and Faryal."],
-            "credits": ["Ian M Fraser - computer, electronics Jesse Kudler - prepared guitar, radios, electronics", "Recorded live on 15th September 2008 by Ethan Tripp", "Edited and mastered by Jesse Kudler", "Artwork by Faryal Maroof"],
-            "iframeSrc": "https://bandcamp.com/EmbeddedPlayer/track=3193099385/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/", 
-            "mediaLinks":"https://ianmfraser.bandcamp.com/track/getting-love-from-all-the-wrong-places"
-        }   
+            "description": [
+                "\"Getting love from all the wrong places\" originally released in 2010 as Homophoni 41\nThanks to Tom Lindel (unused recording), David, Dustin, Adam/CoH,Ethan, and Faryal."
+            ],
+            "credits": [
+                "Ian M Fraser - computer, electronics Jesse Kudler - prepared guitar, radios, electronics",
+                "Recorded live on 15th September 2008 by Ethan Tripp",
+                "Edited and mastered by Jesse Kudler",
+                "Artwork by Faryal Maroof"
+            ],
+            "iframeSrc": "https://bandcamp.com/EmbeddedPlayer/track=3193099385/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
+            "mediaLinks": "https://ianmfraser.bandcamp.com/track/getting-love-from-all-the-wrong-places"
+        }
     ]
 }

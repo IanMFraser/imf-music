@@ -12,8 +12,12 @@ export default function Contact() {
                         <Figure.Image
                             src="https://storage.googleapis.com/album-images/IanFraser_TransPecos-20150805-04317.jpeg"
                             alt="imf performing at trans pecos"
+                            style={{ marginBottom: '0px' }}
                         ></Figure.Image>
-                        <Figure.Caption className="text-muted">
+                        <Figure.Caption
+                            className="text-muted"
+                            style={{ fontSize: '8px' }}
+                        >
                             Photo by Billy Gomberg
                         </Figure.Caption>
                     </Figure>
