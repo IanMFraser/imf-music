@@ -11,6 +11,14 @@
         },
         "oldNews": [
             {
+                "id": "10",
+                "date": "December 10, 2021",
+                "category": "RELEASE",
+                "categoryVariant": "info",
+                "content": "New album \"Live from the Living Room (Straight to Hard Disk)\" available now on Superpang.",
+                "link": "https://ianmfraser.bandcamp.com/album/live-from-the-living-room-straight-to-hard-disk"
+            },
+            {
                 "id": "9",
                 "date": "April 2, 2021",
                 "category": "RELEASE",
