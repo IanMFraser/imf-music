@@ -1,15 +1,23 @@
 {
     "news": {
         "currentNews": {
-            "title": "\"GET THIS\" out now on $pwgen20",
-            "date": "January 22, 2022",
+            "title": "\"?M Fra*\" out now on Lateral Addition",
+            "date": "July 25, 2023",
             "category": "RELEASE",
-            "images": "https://storage.googleapis.com/album-images/get_this_art.jpeg",
-            "alt": "Get This artwork",
-            "content": "New track \"Requiem for a Twisted Hard Disk\" out now on \"Get This: 32 Tracks For Free - A Tribute to Peter Rehberg\".",
-            "link": "https://pwgen20.bandcamp.com/album/get-this-32-tracks-for-free-a-tribute-to-peter-rehberg"
+            "images": "https://storage.googleapis.com/album-images/M%20Fra%20.jpg",
+            "alt": "?M Fra* artwork",
+            "content": "New track \"?M Fra*\" in collaboration with RM Francis out now on Lateral Addition.",
+            "link": "https://www.lateraladdition.org/#83"
         },
         "oldNews": [
+            {
+                "id": "11",
+                "date": "January 22, 2022",
+                "category": "RELEASE",
+                "categoryVariant": "info",
+                "content": "New track \"Requiem for a Twisted Hard Disk\" out now on \"Get This: 32 Tracks For Free - A Tribute to Peter Rehberg\".",
+                "link": "https://pwgen20.bandcamp.com/album/get-this-32-tracks-for-free-a-tribute-to-peter-rehberg"
+            },
             {
                 "id": "10",
                 "date": "December 10, 2021",
