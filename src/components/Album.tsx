@@ -24,12 +24,18 @@ const Album = ({ albums }: AlbumProps) => {
       <h2>{`${album[0].artist} - ${album[0].title}`}</h2>
       <div>
         {album[0].iframeSrc ? (
-          <>
+          <div
+            style={{ position: 'relative', width: '350px', height: '350px' }}
+          >
             {!iframeLoaded && (
               <Spinner
                 animation="border"
                 role="status"
-                style={{ width: '350px', height: '350px', borderWidth: '3px' }}
+                style={{
+                  width: '350px',
+                  height: '350px',
+                  borderWidth: '3px',
+                }}
               >
                 <span className="visually-hidden">Loading...</span>
               </Spinner>
@@ -40,15 +46,17 @@ const Album = ({ albums }: AlbumProps) => {
                 border: '0',
                 width: '350px',
                 height: '350px',
-                display: iframeLoaded ? 'block' : 'none',
+                opacity: iframeLoaded ? 1 : 0,
               }}
               src={album[0].iframeSrc}
               allow="autoplay; encrypted-media; fullscreen"
               onLoad={() => setIframeLoaded(true)}
             >
-              <a href={album[0].mediaLink}>{`${album[0].title} by ${album[0].artist}`}</a>
+              <a
+                href={album[0].mediaLink}
+              >{`${album[0].title} by ${album[0].artist}`}</a>
             </iframe>
-          </>
+          </div>
         ) : (
           <img
             src={album[0].artwork}
@@ -59,14 +67,17 @@ const Album = ({ albums }: AlbumProps) => {
       </div>
       <div className="ms-4">
         <ol>
-          {album[0].tracklist.length > 0 && album[0].tracklist.map((t, i) => <li key={i}>{t}</li>)}
+          {album[0].tracklist.length > 0 &&
+            album[0].tracklist.map((t, i) => <li key={i}>{t}</li>)}
         </ol>
       </div>
       <div className="ms-1">
-        {album[0].description.length > 0 && album[0].description.map((d, i) => <p key={i}>{d}</p>)}
+        {album[0].description.length > 0 &&
+          album[0].description.map((d, i) => <p key={i}>{d}</p>)}
       </div>
       <div className="ms-1">
-        {album[0].credits.length > 0 && album[0].credits.map((c, i) => <p key={i}>{c}</p>)}
+        {album[0].credits.length > 0 &&
+          album[0].credits.map((c, i) => <p key={i}>{c}</p>)}
       </div>
       <br />
       <BackButton />

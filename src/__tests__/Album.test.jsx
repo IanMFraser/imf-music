@@ -43,10 +43,10 @@ describe('Album', () => {
     expect(screen.getByRole('status')).toBeInTheDocument()
   })
 
-  it('renders the iframe hidden before it loads', () => {
+  it('renders the iframe transparent before it loads', () => {
     renderAlbum()
     const iframe = screen.getByTitle(mockAlbumWithIframe.id)
-    expect(iframe).toHaveStyle({ display: 'none' })
+    expect(iframe).toHaveStyle({ opacity: 0 })
   })
 
   it('hides the spinner and shows the iframe after load', () => {
@@ -54,7 +54,7 @@ describe('Album', () => {
     const iframe = screen.getByTitle(mockAlbumWithIframe.id)
     fireEvent.load(iframe)
     expect(screen.queryByRole('status')).not.toBeInTheDocument()
-    expect(iframe).toHaveStyle({ display: 'block' })
+    expect(iframe).toHaveStyle({ opacity: 1 })
   })
 
   it('iframe has the correct src', () => {

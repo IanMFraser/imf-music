@@ -2,13 +2,20 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { MemoryRouter, Routes, Route } from 'react-router-dom'
 import Album from '../components/Album'
-import { mockAlbums, mockAlbumWithIframe, mockAlbumWithoutIframe } from './fixtures'
+import {
+  mockAlbums,
+  mockAlbumWithIframe,
+  mockAlbumWithoutIframe,
+} from './fixtures'
 
 const renderAlbum = (albumId = mockAlbumWithIframe.id) =>
   render(
     <MemoryRouter initialEntries={[`/music/albums/${albumId}`]}>
       <Routes>
-        <Route path="/music/albums/:albumId" element={<Album albums={mockAlbums} />} />
+        <Route
+          path="/music/albums/:albumId"
+          element={<Album albums={mockAlbums} />}
+        />
       </Routes>
     </MemoryRouter>
   )
@@ -43,10 +50,10 @@ describe('Album', () => {
     expect(screen.getByRole('status')).toBeInTheDocument()
   })
 
-  it('renders the iframe hidden before it loads', () => {
+  it('renders the iframe transparent before it loads', () => {
     renderAlbum()
     const iframe = screen.getByTitle(mockAlbumWithIframe.id)
-    expect(iframe).toHaveStyle({ display: 'none' })
+    expect(iframe).toHaveStyle({ opacity: 0 })
   })
 
   it('hides the spinner and shows the iframe after load', () => {
@@ -54,7 +61,7 @@ describe('Album', () => {
     const iframe = screen.getByTitle(mockAlbumWithIframe.id)
     fireEvent.load(iframe)
     expect(screen.queryByRole('status')).not.toBeInTheDocument()
-    expect(iframe).toHaveStyle({ display: 'block' })
+    expect(iframe).toHaveStyle({ opacity: 1 })
   })
 
   it('iframe has the correct src', () => {
@@ -75,7 +82,9 @@ describe('Album', () => {
 
   it('renders artwork image instead of iframe when iframeSrc is absent', () => {
     renderAlbum(mockAlbumWithoutIframe.id)
-    expect(screen.getByAltText(`${mockAlbumWithoutIframe.title} artwork`)).toBeInTheDocument()
+    expect(
+      screen.getByAltText(`${mockAlbumWithoutIframe.title} artwork`)
+    ).toBeInTheDocument()
   })
 
   it('does not show a spinner for albums without an iframe', () => {
