@@ -20,11 +20,11 @@ img {
   height: 100%;
 }
 
-main>.container {
-  padding:0;
+main > .container {
+  padding: 0;
 }
 
-span>img{
+span > img {
   height: 300px;
   width: 300px;
 }
@@ -47,14 +47,14 @@ span>img{
 
 .backButton:hover {
   text-shadow:
-  -.25px -.25px 0 black,
-  .25px -.25px 0 black,
-  -.25px .25px 0 black,
-  .25px .25px 0 black;
-  -webkit-transition: all .15s;
-  -moz-transition: all .15s;
-  -o-transition: all .15s;
-  transition: all .15s;
+    -0.25px -0.25px 0 black,
+    0.25px -0.25px 0 black,
+    -0.25px 0.25px 0 black,
+    0.25px 0.25px 0 black;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
 }
 
 .albumImage {
@@ -76,7 +76,9 @@ span>img{
   text-align: center;
 }
 
-.card, .card-header, .card-footer {
+.card,
+.card-header,
+.card-footer {
   background-color: #f8f8f8;
 }
 
@@ -93,7 +95,7 @@ span>img{
 .footer {
   margin: 4rem 0 1rem 0;
   text-align: center;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .imgCell {
@@ -105,7 +107,7 @@ span>img{
 }
 
 .list-group-item {
-  background-color:#f8f8f8;
+  background-color: #f8f8f8;
 }
 
 .navbar-brand {
@@ -113,12 +115,12 @@ span>img{
 }
 
 .newsLink {
-  color: #FF5858;
+  color: #ff5858;
   text-decoration: none;
 }
 
 .newsLink:visited {
-  color: #FF5858;
+  color: #ff5858;
 }
 
 .overlay {
@@ -130,7 +132,7 @@ span>img{
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: #f7f7f7;
 }
 
@@ -146,7 +148,9 @@ span>img{
   transition-duration: 0.5s;
 }
 
-.hvrBounceIn:hover, .hvrBounceIn:focus, .hvrBounceIn:active {
+.hvrBounceIn:hover,
+.hvrBounceIn:focus,
+.hvrBounceIn:active {
   -webkit-transform: scale(1.7);
   transform: scale(1.7);
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
@@ -154,21 +158,20 @@ span>img{
 }
 
 @media screen and (min-width: 650px) {
-
-  main>.container {
+  main > .container {
     padding-left: 15px;
     padding-right: 15px;
   }
 
   .albumGrid {
     flex-direction: row;
-}
+  }
 
   .card {
     width: 75%;
   }
 
-  .card-img{
+  .card-img {
     width: 350px;
     height: 350px;
   }
