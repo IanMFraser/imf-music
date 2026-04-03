@@ -238,9 +238,7 @@
       "artist": "Ian M Fraser & Reed Evan Rosenberg",
       "title": "The Trajectory Toward Which All Other Trajectories Converge",
       "artwork": "https://storage.googleapis.com/album-images/lateral.jpg",
-      "tracklist": [
-        "The Trajectory Toward Which All Other Trajectories Converge"
-      ],
+      "tracklist": ["The Trajectory Toward Which All Other Trajectories Converge"],
       "description": [
         "\"To understand the trajectories of the stars through a galaxy, Michel Hénon computed the intersections of an orbit with a plane. The resulting patterns depended on the system’s total energy. The points from a stable orbit gradually produced a continuous, connected curve. Other energy levels, however, produced complicated mixtures of stability and chaos, represented by regions of scattered points. […]",
         "The nested detail, lines within lines, can be seen in final form in a series of pictures with progressively greater magnification. But the eerie effect of the strange attractor can be appreciated another way when the shape emerges in time, point by point. It appears like a ghost out of the mist. New points scatter so randomly across the screen that it seems incredible that any structure is there, let alone a structure so intricate and fine. Any two consecutive points are arbitrarily far apart, just like any two points initially nearby in a turbulent flow. Given any number of points, it is impossible to guess where the next will appear—except, of course, that it will be somewhere on the attractor.",

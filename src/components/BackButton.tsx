@@ -1,11 +1,10 @@
-import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function BackButton() {
-  let history = useHistory()
+  const navigate = useNavigate()
 
   const onClickHandler = () => {
-    history.push('/music/albums')
+    navigate('/music/albums')
   }
   return (
     <>
