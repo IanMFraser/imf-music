@@ -1,9 +1,9 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import News from '../components/News'
-import data from '../data.json'
+import data from '../data/news.json'
 
-const { currentNews } = data.news
+const currentNews = data.currentNews
 
 describe('News', () => {
   it('renders without crashing', () => {
@@ -28,7 +28,9 @@ describe('News', () => {
   it('renders the news content', () => {
     render(<News />)
     // Use a substring with no regex special characters
-    expect(screen.getByText(/in collaboration with RM Francis/)).toBeInTheDocument()
+    expect(
+      screen.getByText(/in collaboration with RM Francis/)
+    ).toBeInTheDocument()
   })
 
   it('renders a link when one is provided', () => {
@@ -41,14 +43,20 @@ describe('News', () => {
   it('link points to the correct URL', () => {
     render(<News />)
     if (currentNews.link) {
-      expect(screen.getByRole('link', { name: />>/ })).toHaveAttribute('href', currentNews.link)
+      expect(screen.getByRole('link', { name: />>/ })).toHaveAttribute(
+        'href',
+        currentNews.link
+      )
     }
   })
 
   it('link opens in a new tab', () => {
     render(<News />)
     if (currentNews.link) {
-      expect(screen.getByRole('link', { name: />>/ })).toHaveAttribute('target', '_blank')
+      expect(screen.getByRole('link', { name: />>/ })).toHaveAttribute(
+        'target',
+        '_blank'
+      )
     }
   })
 

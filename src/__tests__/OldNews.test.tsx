@@ -1,9 +1,9 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import OldNews from '../components/OldNews'
-import data from '../data.json'
+import data from '../data/news.json'
 
-const { oldNews } = data.news
+const oldNews = data.oldNews
 const itemsWithLinks = oldNews.filter((n) => n.link)
 
 describe('OldNews', () => {
@@ -13,13 +13,17 @@ describe('OldNews', () => {
 
   it('renders the OLD NEWS heading', () => {
     render(<OldNews />)
-    expect(screen.getByRole('heading', { name: /old news/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { name: /old news/i })
+    ).toBeInTheDocument()
   })
 
   it('renders content for all old news items', () => {
     render(<OldNews />)
     oldNews.forEach((news) => {
-      expect(screen.getByText(new RegExp(news.content.substring(0, 20)))).toBeInTheDocument()
+      expect(
+        screen.getByText(new RegExp(news.content.substring(0, 20)))
+      ).toBeInTheDocument()
     })
   })
 
@@ -27,7 +31,9 @@ describe('OldNews', () => {
     render(<OldNews />)
     // Use getAllByText to handle duplicate dates (e.g. two items share Dec 17, 2018)
     oldNews.forEach((news) => {
-      expect(screen.getAllByText(new RegExp(news.date)).length).toBeGreaterThan(0)
+      expect(screen.getAllByText(new RegExp(news.date)).length).toBeGreaterThan(
+        0
+      )
     })
   })
 

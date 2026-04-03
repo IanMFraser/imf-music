@@ -4,7 +4,7 @@ import { Link, Routes, Route } from 'react-router-dom'
 import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container'
 import Album from './Album'
-import data from '../data.json'
+import albums from '../data/albums.json'
 
 interface AlbumGridProps {
   albums: AlbumData[]
@@ -26,7 +26,11 @@ function AlbumGrid({ albums, placeholderUrl }: AlbumGridProps) {
               <Link to={a.id}>
                 <span>
                   {a.artwork ? (
-                    <Image src={a.artwork} alt={`${a.id} artwork`} className="albumImage" />
+                    <Image
+                      src={a.artwork}
+                      alt={`${a.id} artwork`}
+                      className="albumImage"
+                    />
                   ) : (
                     <Image src={placeholderUrl} alt={`${a.id} artwork`} />
                   )}
@@ -44,14 +48,19 @@ function AlbumGrid({ albums, placeholderUrl }: AlbumGridProps) {
 }
 
 export default function Music() {
-  const albums = data.albums as AlbumData[]
   const placeholderUrl = 'https://via.placeholder.com/320'
+  const albumList = albums as AlbumData[]
 
   return (
     <main>
       <Routes>
-        <Route index element={<AlbumGrid albums={albums} placeholderUrl={placeholderUrl} />} />
-        <Route path=":albumId" element={<Album albums={albums} />} />
+        <Route
+          index
+          element={
+            <AlbumGrid albums={albumList} placeholderUrl={placeholderUrl} />
+          }
+        />
+        <Route path=":albumId" element={<Album albums={albumList} />} />
       </Routes>
     </main>
   )

@@ -1,9 +1,9 @@
-import data from '../data.json'
+import newsData from '../data/news.json'
 import type { CurrentNews } from '../types'
 import Card from 'react-bootstrap/Card'
 
 const News = () => {
-  const currentNews = data.news.currentNews as CurrentNews
+  const currentNews = newsData.currentNews as CurrentNews
 
   return (
     <Card className="border-0">
