@@ -16,6 +16,7 @@
     "react-dom": "^19.2.4",
     "react-hamburger-menu": "^1.2.1",
     "react-router-dom": "^7.14.0",
+    "serve": "^14.2.6",
     "styled-components": "^6.0.8",
     "web-vitals": "^1.1.1"
   },
