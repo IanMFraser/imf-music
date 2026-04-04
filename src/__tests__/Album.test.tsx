@@ -1,3 +1,11 @@
+/**
+ * Tests for Album — heading, document title, iframe loading states,
+ * artwork fallback, tracklist/description/credits, and back button.
+ *
+ * Uses mock album fixtures so tests are not coupled to real data.
+ * fireEvent.load() simulates the iframe's onLoad event to test the
+ * spinner hide / opacity transition.
+ */
 import { describe, it, expect, beforeEach } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { MemoryRouter, Routes, Route } from 'react-router-dom'

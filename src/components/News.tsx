@@ -1,3 +1,10 @@
+/**
+ * Current news section displayed at the top of the Home page.
+ *
+ * Reads the `currentNews` entry from news.json and renders the title,
+ * date, category, image, content text, and an optional external link.
+ * The link is only rendered when the `link` field is non-empty.
+ */
 import newsData from '../data/news.json'
 import type { CurrentNews } from '../types'
 import Card from 'react-bootstrap/Card'

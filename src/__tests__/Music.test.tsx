@@ -1,3 +1,10 @@
+/**
+ * Tests for Music — routing behaviour only.
+ *
+ * Verifies that Music renders AlbumGrid at the index route and
+ * Album at the :albumId route. Detailed grid/album tests live in
+ * their respective test files.
+ */
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter, Routes, Route } from 'react-router-dom'

@@ -1,3 +1,11 @@
+/**
+ * Site-wide navigation bar.
+ *
+ * Renders the artist brand name (links to /music) and two nav links:
+ * MUSIC (/music/albums) and CONTACT (/music/contact).
+ * Collapses into a hamburger menu on small screens via Bootstrap's
+ * responsive Navbar (expand="lg").
+ */
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'

@@ -1,3 +1,13 @@
+/**
+ * Album catalogue grid displayed at the /music/albums index route.
+ *
+ * Renders a responsive grid of album artwork thumbnails. Each cell links
+ * to the album's detail route using a relative path (the album's `id`).
+ * If an album has no artwork URL, a placeholder image is shown instead.
+ *
+ * Title overlays are revealed on hover via the `.overlay` / `.albumTitle`
+ * CSS classes defined in App.css.
+ */
 import type { AlbumData } from '../types'
 import { Link } from 'react-router-dom'
 import Image from 'react-bootstrap/Image'

@@ -1,3 +1,7 @@
+/**
+ * Tests for OldNews — archived news list: heading, all items, conditional
+ * links, and that all external links open in a new tab.
+ */
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import OldNews from '../components/OldNews'

@@ -1,3 +1,9 @@
+/**
+ * Tests for BackButton — rendering, navigation target, and click behaviour.
+ *
+ * useNavigate is mocked so we can assert navigate() is called with the
+ * correct path without needing a full router setup.
+ */
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'

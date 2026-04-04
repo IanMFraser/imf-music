@@ -1,3 +1,7 @@
+/**
+ * Tests for News — current news item rendering: title, date, category,
+ * content, image, and the optional external link.
+ */
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import News from '../components/News'

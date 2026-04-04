@@ -1,3 +1,12 @@
+/**
+ * Shared mock data for component tests.
+ *
+ * Provides typed AlbumData fixtures covering the key rendering branches:
+ * - mockAlbumWithIframe    — full data, has an embedded iframe src
+ * - mockAlbumWithoutIframe — has artwork but no iframe (renders static image)
+ * - mockAlbumWithoutArtwork — no artwork and no iframe (renders placeholder)
+ * - mockAlbums             — default array used in tests that need multiple albums
+ */
 import type { AlbumData } from '../types'
 
 export const mockAlbumWithIframe: AlbumData = {

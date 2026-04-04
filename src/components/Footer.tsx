@@ -1,3 +1,9 @@
+/**
+ * Site-wide footer.
+ *
+ * Renders a centered copyright line with the current year, computed
+ * at render time so it never goes stale. Styled with styled-components.
+ */
 import styled from 'styled-components'
 
 const Copyright = styled.footer`

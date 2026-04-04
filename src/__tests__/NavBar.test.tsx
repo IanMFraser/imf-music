@@ -1,3 +1,8 @@
+/**
+ * Tests for NavBar — brand name, nav links, and mobile hamburger toggle.
+ *
+ * Wrapped in MemoryRouter because NavBar renders inside a router context in production.
+ */
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
@@ -38,7 +43,10 @@ describe('NavBar', () => {
 
   it('CONTACT link points to /music/contact', () => {
     renderNavBar()
-    expect(screen.getByText('CONTACT')).toHaveAttribute('href', '/music/contact')
+    expect(screen.getByText('CONTACT')).toHaveAttribute(
+      'href',
+      '/music/contact'
+    )
   })
 
   it('renders a hamburger toggle for mobile', () => {

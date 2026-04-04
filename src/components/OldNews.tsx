@@ -1,3 +1,10 @@
+/**
+ * Archived news list displayed below the current news on the Home page.
+ *
+ * Reads the `oldNews` array from news.json and renders each item as a
+ * Bootstrap ListGroup entry showing date, category, and content.
+ * Items with a non-empty `link` value render an ExternalLink; others do not.
+ */
 import newsData from '../data/news.json'
 import type { NewsItem } from '../types'
 import ListGroup from 'react-bootstrap/ListGroup'

@@ -1,3 +1,9 @@
+/**
+ * Contact / bio page at /music/contact.
+ *
+ * Displays a live performance photo of the artist with a photo credit,
+ * a short biography, and a mailto email link.
+ */
 import Figure from 'react-bootstrap/Figure'
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'

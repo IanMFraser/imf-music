@@ -1,3 +1,12 @@
+/**
+ * Music section — handles nested routing under /music/albums.
+ *
+ * Index route renders AlbumGrid (the full catalogue view).
+ * The :albumId route renders the Album detail page for a specific release.
+ *
+ * Album data is loaded once here from albums.json and passed as props
+ * so both child routes share the same data source.
+ */
 import type { AlbumData } from '../types'
 import { Routes, Route } from 'react-router-dom'
 import Album from './Album'

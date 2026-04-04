@@ -1,3 +1,17 @@
+/**
+ * Individual album detail page at /music/albums/:albumId.
+ *
+ * Looks up the album by `albumId` URL param and renders:
+ * - An embedded streaming iframe (if `iframeSrc` is set), or a static
+ *   artwork image as a fallback when no iframe source is available
+ * - Tracklist, description paragraphs, and credits
+ * - A BackButton returning to the album grid
+ *
+ * The iframe shows a loading spinner until the onLoad event fires, at
+ * which point the spinner is hidden and the iframe fades in (opacity: 0 → 1).
+ * The spinner resets whenever the user navigates to a different album so
+ * it always appears while the new iframe is loading.
+ */
 import { useEffect, useState } from 'react'
 import type { AlbumData } from '../types'
 import { useParams } from 'react-router-dom'
@@ -17,6 +31,7 @@ const Album = ({ albums }: AlbumProps) => {
 
   usePageTitle(`${album.artist} - ${album.title} | Ian M Fraser`)
 
+  // Reset the spinner each time the user navigates to a different album.
   useEffect(() => {
     setIframeLoaded(false)
   }, [albumId])

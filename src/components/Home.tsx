@@ -1,3 +1,9 @@
+/**
+ * Home page — the default landing view at /music.
+ *
+ * Composes the News (current featured item) and OldNews (archived list)
+ * sections inside a Bootstrap Container, and sets the document title.
+ */
 import News from './News'
 import OldNews from './OldNews'
 import Container from 'react-bootstrap/Container'

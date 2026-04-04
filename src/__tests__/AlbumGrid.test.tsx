@@ -1,3 +1,9 @@
+/**
+ * Tests for AlbumGrid — heading, document title, per-album images,
+ * links, title overlays, artwork src, and placeholder fallback.
+ *
+ * Wrapped in MemoryRouter because AlbumGrid renders React Router <Link> elements.
+ */
 import { describe, it, expect, beforeEach } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
