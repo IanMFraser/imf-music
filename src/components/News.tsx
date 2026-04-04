@@ -1,6 +1,7 @@
 import newsData from '../data/news.json'
 import type { CurrentNews } from '../types'
 import Card from 'react-bootstrap/Card'
+import ExternalLink from './ExternalLink'
 
 const News = () => {
   const currentNews = newsData.currentNews as CurrentNews
@@ -19,16 +20,7 @@ const News = () => {
         <Card.Img src={currentNews.images} className="mt-4"></Card.Img>
         <Card.Text className="mt-4">
           {currentNews.content}{' '}
-          {currentNews.link && (
-            <a
-              className="newsLink hvrBounceIn"
-              href={currentNews.link}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {'>>'}{' '}
-            </a>
-          )}
+          {currentNews.link && <ExternalLink href={currentNews.link} />}
         </Card.Text>
       </Card.Body>
     </Card>

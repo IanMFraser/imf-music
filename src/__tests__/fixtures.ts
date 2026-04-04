@@ -6,7 +6,10 @@ export const mockAlbumWithIframe: AlbumData = {
   title: 'Test Album Title',
   artwork: 'https://example.com/artwork.jpg',
   tracklist: ['Track One', 'Track Two', 'Track Three'],
-  description: ['First description paragraph.', 'Second description paragraph.'],
+  description: [
+    'First description paragraph.',
+    'Second description paragraph.',
+  ],
   credits: ['Credit One', 'Credit Two'],
   iframeSrc: 'https://example.com/embed',
   mediaLink: 'https://example.com/media',
@@ -24,4 +27,19 @@ export const mockAlbumWithoutIframe: AlbumData = {
   mediaLink: '',
 }
 
-export const mockAlbums: AlbumData[] = [mockAlbumWithIframe, mockAlbumWithoutIframe]
+export const mockAlbumWithoutArtwork: AlbumData = {
+  id: 'no-artwork-album',
+  artist: 'No Artwork Artist',
+  title: 'No Artwork Album',
+  artwork: '',
+  tracklist: [],
+  description: [],
+  credits: [],
+  iframeSrc: '',
+  mediaLink: '',
+}
+
+export const mockAlbums: AlbumData[] = [
+  mockAlbumWithIframe,
+  mockAlbumWithoutIframe,
+]

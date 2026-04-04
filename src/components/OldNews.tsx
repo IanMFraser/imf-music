@@ -2,6 +2,7 @@ import newsData from '../data/news.json'
 import type { NewsItem } from '../types'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Card from 'react-bootstrap/Card'
+import ExternalLink from './ExternalLink'
 
 export default function OldNews() {
   const oldNews = newsData.oldNews as NewsItem[]
@@ -24,16 +25,7 @@ export default function OldNews() {
                 {news.category}
               </strong>
               {` ${news.content} `}
-              {news.link && (
-                <a
-                  className="newsLink hvrBounceIn"
-                  href={news.link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {' >>'}{' '}
-                </a>
-              )}
+              {news.link && <ExternalLink href={news.link} />}
             </ListGroup.Item>
           )
         })}

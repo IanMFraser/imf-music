@@ -1,10 +1,12 @@
-import { describe, it, expect, beforeEach } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter, Routes, Route } from 'react-router-dom'
 import Music from '../components/Music'
 import albums from '../data/albums.json'
 
-const renderMusic = () =>
+const firstAlbum = albums[0]
+
+const renderMusicAtIndex = () =>
   render(
     <MemoryRouter initialEntries={['/music/albums']}>
       <Routes>
@@ -13,57 +15,33 @@ const renderMusic = () =>
     </MemoryRouter>
   )
 
-describe('Music (album grid)', () => {
-  beforeEach(() => {
-    document.title = ''
-  })
+const renderMusicAtAlbum = (albumId = firstAlbum.id) =>
+  render(
+    <MemoryRouter initialEntries={[`/music/albums/${albumId}`]}>
+      <Routes>
+        <Route path="/music/albums/*" element={<Music />} />
+      </Routes>
+    </MemoryRouter>
+  )
 
+describe('Music', () => {
   it('renders without crashing', () => {
-    renderMusic()
+    renderMusicAtIndex()
   })
 
-  it('renders the Computer Music heading', () => {
-    renderMusic()
+  it('renders AlbumGrid at the index route', () => {
+    renderMusicAtIndex()
     expect(
       screen.getByRole('heading', { name: /computer music/i })
     ).toBeInTheDocument()
   })
 
-  it('sets the document title', () => {
-    renderMusic()
-    expect(document.title).toBe('Ian M Fraser | Music')
-  })
-
-  it('renders an image for every album', () => {
-    renderMusic()
-    albums.forEach((album) => {
-      expect(screen.getByAltText(`${album.id} artwork`)).toBeInTheDocument()
-    })
-  })
-
-  it('renders a link for every album', () => {
-    renderMusic()
-    const links = screen.getAllByRole('link')
-    expect(links.length).toBe(albums.length)
-  })
-
-  it('renders the title overlay for the first album', () => {
-    renderMusic()
-    expect(screen.getByText(albums[0].title)).toBeInTheDocument()
-  })
-
-  it('renders the title overlay for every album', () => {
-    renderMusic()
-    albums.forEach((album) => {
-      expect(screen.getByText(album.title)).toBeInTheDocument()
-    })
-  })
-
-  it('each album link navigates to its detail route', () => {
-    renderMusic()
-    const links = screen.getAllByRole('link')
-    albums.forEach((album, i) => {
-      expect(links[i]).toHaveAttribute('href', `/music/albums/${album.id}`)
-    })
+  it('renders Album at the :albumId route', () => {
+    renderMusicAtAlbum()
+    expect(
+      screen.getByRole('heading', {
+        name: `${firstAlbum.artist} - ${firstAlbum.title}`,
+      })
+    ).toBeInTheDocument()
   })
 })
